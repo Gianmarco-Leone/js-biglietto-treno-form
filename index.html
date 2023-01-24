@@ -26,7 +26,7 @@
                     <input type="text" name="name" id="user_name">
 
                     <label for="km">Km da percorrere</label>
-                    <input type="text" name="distance" id="user_km">
+                    <input type="number" name="distance" id="km" class="user-km">
 
                     <label>Fascia d'età</label>
                     <select name="chosen-age" id="" required>
@@ -37,8 +37,8 @@
                 </div>
 
                 <div>
-                    <input type="button" value="Genera">
-                    <input type="button" value="Annulla">
+                    <button type="button" id="calculation_button">Genera</button>
+                    <button type="button">Annulla</button>
                 </div>
 
             </form>
