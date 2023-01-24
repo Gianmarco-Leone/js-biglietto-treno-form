@@ -10,23 +10,30 @@
 
 
 // SVOLGIMENTO
-let outputMessage;
 const pricePerKm = 0.21;
 const calculationButton = document.getElementById("calculation_button");
 
-// CHIEDERE ALL'UTENTE NUMERO KM
 let userKm;
+let userAge;
+
 // console.log("I chilometri da percorrere sono " + userKm);
 
 calculationButton.addEventListener(
     "click",
     function () {
+        // CHIEDERE ALL'UTENTE NUMERO KM
         userKm = document.querySelector("input[type='number']").value;
         console.log(userKm);
+        // CALCOLO PREZZO PER KM
+        let price = userKm * pricePerKm;
+        console.log(price);
+        // CHIEDERE ALL'UTENTE ETA'
+        userAge = document.querySelector("select").value;
+        console.log(userAge);
     }
 );
 
-// CHIEDERE ALL'UTENTE ETA'
+
 // const userAge = parseInt(prompt("Quanti anni hai?"));
 // console.log("L'età dell'utente è " + userAge);
 
