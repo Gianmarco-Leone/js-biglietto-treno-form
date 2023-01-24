@@ -55,8 +55,13 @@ calculationButton.addEventListener(
             console.log(price);
         }
 
+        let waggon = Math.floor(Math.random() * 20) + 1;
+        let cpcode = Math.floor(Math.random() * 100000) + 1;
+
         document.getElementById("passenger_name").innerHTML = userName;
         document.getElementById("offer").innerHTML = ticket;
+        document.getElementById("waggon_train").innerHTML = waggon;
+        document.getElementById("cp_code").innerHTML = cpcode;
 
     }
 
