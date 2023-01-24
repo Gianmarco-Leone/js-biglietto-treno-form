@@ -55,14 +55,26 @@ calculationButton.addEventListener(
             console.log(price);
         }
 
+        // GENERO NUMERO RANDOMICO DA 1 A 20
         let waggon = Math.floor(Math.random() * 20) + 1;
+
+        // GENERO NUMERO RANDOMICO DA 1 A 100000
         let cpcode = Math.floor(Math.random() * 100000) + 1;
 
+        // SCRIVO NOME PASSEGGERO SUL BIGLIETTO
         document.getElementById("passenger_name").innerHTML = userName;
+
+        // SCRIVO TIPOLOGIA OFFERTA SUL BIGLIETTO
         document.getElementById("offer").innerHTML = ticket;
+
+        // SCRIVO NUMERO CARROZZA SUL BIGLIETTO
         document.getElementById("waggon_train").innerHTML = waggon;
+
+        // SCRIVO NUMERO BIGLIETTO SUL BIGLIETTO
         document.getElementById("cp_code").innerHTML = cpcode;
 
+        // SCRIVO PREZZO SUL BIGLIETTO
+        document.getElementById("ticket_price").innerHTML = price;
     }
 
 );
