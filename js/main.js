@@ -78,3 +78,34 @@ calculationButton.addEventListener(
     }
 
 );
+
+// ISTRUZIONI BOTTONE "ANNULLA" PER SVUOTARE LA PAGINA
+const cancelButton = document.getElementById("cancel_button");
+
+cancelButton.addEventListener(
+    "click",
+    function () {
+
+        // AZZERO VALORI TAG INPUT
+        document.querySelector("select").value = "";
+        document.querySelector("input[type='number']").value = "";
+        document.querySelector("#user_name").value = "";
+
+
+        // SCRIVO NOME PASSEGGERO SUL BIGLIETTO
+        document.getElementById("passenger_name").innerHTML = "";
+
+        // SCRIVO TIPOLOGIA OFFERTA SUL BIGLIETTO
+        document.getElementById("offer").innerHTML = "";
+
+        // SCRIVO NUMERO CARROZZA SUL BIGLIETTO
+        document.getElementById("waggon_train").innerHTML = "";
+
+        // SCRIVO NUMERO BIGLIETTO SUL BIGLIETTO
+        document.getElementById("cp_code").innerHTML = "";
+
+        // SCRIVO PREZZO SUL BIGLIETTO
+        document.getElementById("ticket_price").innerHTML = "";
+
+    }
+);
