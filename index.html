@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo prezzo biglietto</title>
+
+    <!-- JS -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+            <form>
+
+                <div>
+                    <label for="user_name">Nome e Cognome</label>
+                    <input type="text" name="name" id="user_name">
+
+                    <label for="km">Km da percorrere</label>
+                    <input type="text" name="distance" id="user_km">
+
+                    <label>Fascia d'età</label>
+                    <select name="chosen-age" id="" required>
+                        <option value="under18">Minorenne</option>
+                        <option value="intermediate">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="button" value="Genera">
+                    <input type="button" value="Annulla">
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
