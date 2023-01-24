@@ -37,6 +37,21 @@ section {
     margin-top: 3rem;
 }
 
+label {
+    color: #B91350;
+    font-weight: bold;
+}
+
+input {
+    border-color: #B91350;
+}
+
+button {
+    margin: 1rem;
+    padding: .2rem;
+    color: #B91350;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;

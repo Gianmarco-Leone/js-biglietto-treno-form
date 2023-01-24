@@ -74,7 +74,7 @@ calculationButton.addEventListener(
         document.getElementById("cp_code").innerHTML = cpcode;
 
         // SCRIVO PREZZO SUL BIGLIETTO
-        document.getElementById("ticket_price").innerHTML = price;
+        document.getElementById("ticket_price").innerHTML = "€" + price;
     }
 
 );
