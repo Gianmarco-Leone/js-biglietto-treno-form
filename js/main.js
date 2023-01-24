@@ -34,23 +34,30 @@ calculationButton.addEventListener(
         const pricePerKm = 0.21;
         let price = userKm * pricePerKm;
         console.log(price);
+        let ticket = "Biglietto Standard";
 
         if (userAge == "under18") {
             price = price - ((price * 20) / 100);
             price = price.toFixed(2);
             console.log(price);
+            ticket = "Biglietto Under 18";
         }
 
         else if (userAge == "over65") {
             price = price - ((price * 40) / 100);
             price = price.toFixed(2);
             console.log(price);
+            ticket = "Biglietto Over 65";
         }
 
         else {
             price = price.toFixed(2);
             console.log(price);
         }
+
+        document.getElementById("passenger_name").innerHTML = userName;
+        document.getElementById("offer").innerHTML = ticket;
+
     }
 
 );

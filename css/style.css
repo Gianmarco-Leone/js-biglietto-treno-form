@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B91350;
+}
+
+h1,
+h2 {
+    color: #FFF;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.col.main-col {
+    flex-basis: 18rem;
+    min-height: 5rem;
+    background-color: #555;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+.col span {
+    padding-top: 2rem;
+}
