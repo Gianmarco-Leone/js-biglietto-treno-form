@@ -23,7 +23,7 @@ const calculationButton = document.getElementById("calculation_button");
 calculationButton.addEventListener(
     "click",
     function () {
-        userKm = document.getElementsByClassName("user-km").value;
+        userKm = document.querySelector("input[type='number']").value;
     }
 );
 
