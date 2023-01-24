@@ -10,75 +10,47 @@
 
 
 // SVOLGIMENTO
-const pricePerKm = 0.21;
 const calculationButton = document.getElementById("calculation_button");
-
-let userKm;
-let userAge;
-
-// console.log("I chilometri da percorrere sono " + userKm);
 
 calculationButton.addEventListener(
     "click",
     function () {
+        // CHIEDERE ALL'UTENTE ETA'
+        let inputAge = document.querySelector("select");
+        let userAge = inputAge.value;
+        console.log(userAge);
+
+        // CHIEDERE ALL'UTENTE NOME
+        let inputName = document.querySelector("#user_name");
+        let userName = inputName.value;
+        console.log(userName);
+
         // CHIEDERE ALL'UTENTE NUMERO KM
-        userKm = document.querySelector("input[type='number']").value;
+        let inputKm = document.querySelector("input[type='number']");
+        let userKm = inputKm.value;
         console.log(userKm);
+
         // CALCOLO PREZZO PER KM
+        const pricePerKm = 0.21;
         let price = userKm * pricePerKm;
         console.log(price);
-        // CHIEDERE ALL'UTENTE ETA'
-        userAge = document.querySelector("select").value;
-        console.log(userAge);
+
+        if (userAge == "under18") {
+            price = price - ((price * 20) / 100);
+            price = price.toFixed(2);
+            console.log(price);
+        }
+
+        else if (userAge == "over65") {
+            price = price - ((price * 40) / 100);
+            price = price.toFixed(2);
+            console.log(price);
+        }
+
+        else {
+            price = price.toFixed(2);
+            console.log(price);
+        }
     }
+
 );
-
-
-// const userAge = parseInt(prompt("Quanti anni hai?"));
-// console.log("L'età dell'utente è " + userAge);
-
-
-
-// if (!isNaN(userAge) && !isNaN(userKm)) {
-//     // PREZZO BIGLIETTO CALCOLATO IN BASE AI KM
-//     let price = userKm * pricePerKm;
-//     // console.log("Il prezzo del biglietto è € " + price);
-
-
-//     // APPLICARE SCONTO UNDER 18
-//     if (userAge < 18) {
-
-//         // CREAZIONE SCONTO UNDER 18
-//         const smallDiscountValue = (price * 20) / 100;
-//         price = price - smallDiscountValue;
-//         price = price.toFixed(2);
-
-//         outputMessage = `Il prezzo scontato per gli under 18 è € ${price}`
-//         console.log(outputMessage);
-
-//     }
-
-//     // APPLICARE SCONTO OVER 65
-//     else if (userAge > 65) {
-
-//         // CREAZIONE SCONTO OVER 65
-//         const bigDiscountValue = (price * 40) / 100;
-//         price = price - bigDiscountValue;
-//         price = price.toFixed(2);
-
-//         outputMessage = `Il prezzo scontato per gli over 65 è € ${price}`
-//         console.log(outputMessage);
-//     }
-
-//     // PREZZO PER TUTTI GLI ALTRI UTENTI CHE NON HANNO DIRITTO A SCONTO
-//     else {
-//         price = price.toFixed(2);
-
-//         outputMessage = `Il prezzo non scontato è € ${price}`
-//         console.log(outputMessage);
-//     }
-
-// } else {
-//     outputMessage = "I valori inseriti non sono validi"
-//     console.log(outputMessage);
-// }
