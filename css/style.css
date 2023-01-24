@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #B91350;
+    background-color: #202867;
 }
 
 .p-2 {
@@ -26,7 +26,7 @@ body {
 
 h1,
 h2 {
-    color: #FFF;
+    color: #FABA00;
 }
 
 .text-center {
@@ -38,24 +38,24 @@ section {
 }
 
 label {
-    color: #B91350;
+    color: #FABA00;
     font-weight: bold;
 }
 
-input {
-    border-color: #B91350;
+input,
+select {
+    border-color: #202867;
 }
 
 button {
     margin: 1rem;
     padding: .2rem;
-    color: #B91350;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: white;
+    background-color: #FFF;
     border-radius: 10px;
 }
 
@@ -87,4 +87,20 @@ button {
     border-top: 2px solid #888;
     border-bottom: 2px solid #888;
     min-height: 6rem;
+}
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    color: #FFF;
+    background-color: #29ABE2;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+footer a {
+    color: inherit;
 }
